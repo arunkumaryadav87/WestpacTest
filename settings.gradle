@@ -1,0 +1,2 @@
+rootProject.name='JPH Posts'
+include ':app'

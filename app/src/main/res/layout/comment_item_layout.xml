@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/small_space_between_views"
+    android:background="@drawable/comment_background"
+    android:padding="@dimen/small_space_between_views">
+
+    <TextView
+        android:id="@+id/tvBody"
+        style="@style/CustomTextStyle"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_toStartOf="@+id/tvEmail"
+        android:text="@string/by_"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_small" />
+</RelativeLayout>

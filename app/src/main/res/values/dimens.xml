@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_space_between_views">8dp</dimen>
+    <dimen name="large_space_between_views">16dp</dimen>
+
+    <dimen name="alert_dialog_corner_radius">10dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_medium">15sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+
+    <!-- list arrow -->
+    <dimen name="list_arrow_width">24dp</dimen>
+    <dimen name="list_arrow_height">48dp</dimen>
+</resources>
