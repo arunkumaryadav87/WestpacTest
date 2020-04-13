@@ -1,7 +1,6 @@
 package com.arunyadav.jphposts.view.posts.commentslist
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,7 +37,7 @@ class CommentsFragment : BaseFragment(), CommentsContract.View {
         initializeViews()
     }
 
-    fun initializeViews() {
+    private fun initializeViews() {
         tvPostTitle.text = selectedPost.title
         tvPostBody.text = selectedPost.body
         presenter.fetchComments(selectedPost.id)
@@ -49,7 +48,8 @@ class CommentsFragment : BaseFragment(), CommentsContract.View {
             activity!!,
             null,
             errorMessage,
-            getString(R.string.btn_ok)) { _, _ -> }
+            getString(R.string.btn_ok)
+        ) { _, _ -> }
     }
 
     override fun showComments(comments: List<Comment>?) {
@@ -76,9 +76,9 @@ class CommentsFragment : BaseFragment(), CommentsContract.View {
 
     companion object {
         private const val TAG = "PostsFragment"
-        const val POST_OBJECT = "POST_OBJECT"
+        private const val POST_OBJECT = "POST_OBJECT"
 
-        fun newInstance(post: Post) : CommentsFragment {
+        fun newInstance(post: Post): CommentsFragment {
             val fragment = CommentsFragment()
             val bundle = Bundle()
             bundle.putParcelable(POST_OBJECT, post)
